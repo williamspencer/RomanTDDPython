@@ -18,3 +18,7 @@ class KnownRoman(TestCase):
         expected = "III"
         self.assertEqual(expected, result)
 
+    def test_roman_forThree(self):
+        result = Roman.romanToInt(4)
+        expected = "IV"
+        self.assertEqual(expected, result)
