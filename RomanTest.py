@@ -18,4 +18,3 @@ class KnownRoman(TestCase):
         expected = "III"
         self.assertEqual(expected, result)
 
-    
