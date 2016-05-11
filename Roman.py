@@ -1,2 +1,5 @@
 def romanToInt(value):
-    return "I"
+    if value == 2:
+        return "II"
+    else:
+        return "I"
