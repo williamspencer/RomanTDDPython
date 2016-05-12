@@ -33,22 +33,27 @@ class KnownRoman(TestCase):
         expected = "VI"
         self.assertEqual(expected, result)
 
-    def test_roman_forSix(self):
+    def test_roman_forSeven(self):
         result = Roman.romanToInt(7)
         expected = "VII"
         self.assertEqual(expected, result)
 
-    def test_roman_forSix(self):
+    def test_roman_forEight(self):
         result = Roman.romanToInt(8)
         expected = "VIII"
         self.assertEqual(expected, result)
 
-    def test_roman_forSix(self):
+    def test_roman_forNine(self):
         result = Roman.romanToInt(9)
         expected = "IX"
         self.assertEqual(expected, result)
 
-    def test_roman_forSix(self):
+    def test_roman_forTen(self):
         result = Roman.romanToInt(10)
         expected = "X"
+        self.assertEqual(expected, result)
+
+    def test_roman_forEleven(self):
+        result = Roman.romanToInt(11)
+        expected = "XI"
         self.assertEqual(expected, result)

@@ -1,5 +1,8 @@
 def romanToInt(value):
     result = ""
+    if (value == 10):
+        result = "X"
+        value -= 10
     if (value == 9):
         result = "IX"
         value -= 9
