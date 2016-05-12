@@ -67,3 +67,13 @@ class KnownRoman(TestCase):
         result = Roman.romanToInt(33)
         expected = "XXXIII"
         self.assertEqual(expected, result)
+
+    def test_roman_forTwoThousandSixteen(self):
+        result = Roman.romanToInt(2016)
+        expected = "MMXVI"
+        self.assertEqual(expected, result)
+
+    def test_roman_forFourThousandNineHundredNinetyNine(self):
+        result = Roman.romanToInt(4999)
+        expected = "MMMMCMXCIX"
+        self.assertEqual(expected, result)
