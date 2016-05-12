@@ -57,3 +57,4 @@ class KnownRoman(TestCase):
         result = Roman.romanToInt(11)
         expected = "XI"
         self.assertEqual(expected, result)
+

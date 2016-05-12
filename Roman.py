@@ -1,6 +1,15 @@
 def romanToInt(value):
     result = ""
-    if (value == 10):
+    roman = {
+        "X": 10,
+    }
+
+    for i in roman:
+        while value >= roman[i]:
+            result += i
+            value -= roman[i]
+
+    if (value >= 10):
         result = "X"
         value -= 10
     if (value == 9):
