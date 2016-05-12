@@ -1,27 +1,16 @@
-def romanToInt(value):
-    result = ""
-    roman = {
-        "X": 10,
+roman = {
+    1 : "I",
+    4 : "IV",
+    5 : "V",
+    9 : "IX",
+    10 : "X"
     }
 
-    for i in roman:
-        while value >= roman[i]:
-            result += i
-            value -= roman[i]
+def romanToInt(value):
+    result = ""
 
-    if (value >= 10):
-        result = "X"
-        value -= 10
-    if (value == 9):
-        result = "IX"
-        value -= 9
-    if (value >= 5):
-        result = "V"
-        value -= 5
-    if (value == 4):
-        result = "IV"
-        value -= 4
-    while (value > 0):
-        result += "I"
-        value -= 1
+    for digit, numeral in sorted(roman.items(), reverse=True):
+        while value >= digit:
+            result += numeral
+            value -= digit
     return result
